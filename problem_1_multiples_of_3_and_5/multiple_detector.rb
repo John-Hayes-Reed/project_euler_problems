@@ -6,12 +6,10 @@ class MultipleDetector
   end
 
   def sum_of_all_multiples_under(roof)
-    (1...roof).reduce(0) do |sum, number|
-      if multiples_to_detect.any? { |multiple| (number % multiple).zero? }
-        sum + number
-      else
-        sum
-      end
+    sum = 0
+    (1...roof).each do |n|
+      sum += n if multiples_to_detect.any? { |multiple| (n % multiple).zero? }
     end
+    sum
   end
 end
