@@ -24,7 +24,7 @@ SumSquareDifferenceBruteForce.call roof: 10
 #=> 2640
 
 SumSquareDifferenceBruteForce.call roof: 100
-=> 25164150
+#=> 25164150
 ```
 
 ### Using mathematical formula
